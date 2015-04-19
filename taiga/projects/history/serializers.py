@@ -16,6 +16,7 @@
 
 from rest_framework import serializers
 from taiga.base.serializers import JsonField
+from taiga.projects.attachments.admin import AttachmentInline
 
 from . import models
 

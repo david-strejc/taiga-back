@@ -42,6 +42,8 @@ class Task(OCCModelMixin, WatchedModelMixin, BlockedMixin, TaggedMixin, models.M
     milestone = models.ForeignKey("milestones.Milestone", null=True, blank=True,
                                   default=None, related_name="tasks",
                                   verbose_name=_("milestone"))
+    deployment = models.ForeignKey("projects.Deployment", null=True, blank=True,
+                                default=None)
     created_date = models.DateTimeField(null=False, blank=False,
                                         verbose_name=_("created date"),
                                         default=timezone.now)

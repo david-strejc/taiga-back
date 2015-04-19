@@ -21,6 +21,7 @@ from taiga.users.admin import RoleInline
 from . import models
 
 class MembershipAdmin(admin.ModelAdmin):
+    #list_display = ['project', 'role', 'user']
     list_display = ['project', 'role', 'user']
     list_display_links = list_display
     list_filter = ['project', 'role']

@@ -188,6 +188,7 @@ INSTALLED_APPS = [
     "taiga.projects.milestones",
     "taiga.projects.userstories",
     "taiga.projects.tasks",
+    "taiga.projects.deployments",
     "taiga.projects.issues",
     "taiga.projects.wiki",
     "taiga.searches",
@@ -199,6 +200,7 @@ INSTALLED_APPS = [
     "taiga.hooks.gitlab",
     "taiga.hooks.bitbucket",
     "taiga.webhooks",
+    "taiga.contrib_hall",
 
     "rest_framework",
     "djmail",

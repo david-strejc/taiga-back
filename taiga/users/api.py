@@ -48,7 +48,7 @@ from .signals import user_cancel_account as user_cancel_account_signal
 
 
 class UsersViewSet(ModelCrudViewSet):
-    permission_classes = (permissions.UserPermission,)
+    #permission_classes = (permissions.UserPermission,)
     admin_serializer_class = serializers.UserAdminSerializer
     serializer_class = serializers.UserSerializer
     queryset = models.User.objects.all()
